@@ -11,5 +11,5 @@ jobs:
       - name: Build and push the image
         run: |
           docker login --username RustyRin --password ${{ secrets.GHCR_TOKEN }} ghcr.io
-          docker build . --tag ghcr.io/RustyRin/Plex_Scrobble_App:latest
-          docker push ghcr.io/RustyRin/Plex_Scrobble_App:latest
+          docker build . --tag ghcr.io/rustyrin/plex_scrobble_app:latest
+          docker push ghcr.io/rustyrin/plex_scrobble_app:latest
