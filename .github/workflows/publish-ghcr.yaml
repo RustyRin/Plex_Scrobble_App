@@ -10,6 +10,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build and push the image
         run: |
-          docker login --username RustyRin --password ${{ secrets.GCHR_TOKEN }} ghcr.io
+          docker login --username RustyRin --password ${{ secrets.GHCR_TOKEN }} ghcr.io
           docker build . --tag ghcr.io/RustyRin/Plex_Scrobble_App:latest
           docker push ghcr.io/RustyRin/Plex_Scrobble_App:latest
